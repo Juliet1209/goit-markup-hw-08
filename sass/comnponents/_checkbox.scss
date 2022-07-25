@@ -1,0 +1,67 @@
+.form-checkbox-icon.empty {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-checkbox-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #040404;
+    border: #2F303A;
+
+}
+
+
+
+.form-checkbox-icon.agree {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    fill: #ffffff;
+    background-color: #2196F3;
+    border-radius: 2px;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-checkbox-agreement {
+    margin-left: calc(7px + 13px);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.form-checkbox-contract {
+    color: #2196F3;
+    &:hover,
+    &focus {
+    color: #2196F3;
+}
+}
+
+
+
+
+.form-checkbox-input:not(:checked)+.form-checkbox-icon.empty {
+    opacity: 1;
+}
+
+.form-checkbox-input:checked~.form-checkbox-icon.agree {
+    opacity: 1;
+}
+.form-checkbox-custom-checkbox {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    outline: 2px solid #9da4bd;
+    outline-offset: -2px;
+    border-radius: 8px;
+
+    transition: outline-color 250ms, background-color 250ms;
+}
