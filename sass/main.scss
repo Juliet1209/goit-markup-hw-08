@@ -1,22 +1,13 @@
-@import "./utils/vars";
-@import "./utils/visually-hidden";
+//main:
+// переменные
+@import './utils/module';
 
-@import "./base/common";
-@import "./base/reset";
+// общие стили, сброс стилей
+@import './base/module';
 
-@import "./comnponents/buttons";
-@import "./comnponents/container";
-@import "./comnponents/section";
-@import "./comnponents/socials";
-@import "./comnponents/modal";
-@import "./comnponents/checkbox";
-@import "./comnponents/subscribe";
-@import "./comnponents/current";
+// контейнер, секция, кнопка, соц.сети, логотип
+@import './components/module';
 
-@import "./layouts/header";
-@import "./layouts/wedo";
-@import "./layouts/footer";
-@import "./layouts/about";
-@import "./layouts/staff";
-@import "./layouts/projects";
-@import "./layouts/clients";
+// шапка сайта, футер, главный екран
+@import './layout/module';
+

@@ -1,0 +1,47 @@
+.wedo {
+    background-color: var(--third-color);
+    padding: 60px 0;   
+
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0;
+    }
+}
+
+.wedo__list {   
+    --count-cards: 1;
+
+    @media screen and (min-width: 768px) {
+        --count-cards: 2;   
+    }
+
+    @media screen and (min-width: 1200px) {
+        --count-cards: 4;
+    }
+}
+
+.wedo-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--bgd-scl);
+}
+
+.wedo__title { 
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.wedo__desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--second-color);
+}
